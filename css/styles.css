@@ -1,12 +1,25 @@
 body
 {
-   background-image: url();
+   background-image: url("../gamepic.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 .p
 {
    color: red;
    font-size: 650%;
    font-family: Pacifico;
+}
+#png
+{
+   width: 500px;
+   z-index: 620;
+   position: absolute;
+}
+marquee
+{
+   z-index: 10000;
+   /*background-image: url('../animate-bird-slide-25.gif');*/
 }
 .i
 {
@@ -107,12 +120,13 @@ ul
    font-weight: bold;
 }
 
-.png
+#png
 {
    z-index: 18;
    position: absolute;
-   left: 500px;
+   left: 430px;
    top: -30px;
+   /*display: none;*/
 }
 .col-md-6
 {
