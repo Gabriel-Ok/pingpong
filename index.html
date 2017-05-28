@@ -10,18 +10,25 @@
             <link rel="stylesheet" href="css/styles.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-      <title>PINGPONG</title>
+      <title >PINGPONG</title>
       <script
          src="js/jquery.js">
       </script>
    </head>
    <!-- <div class="loader"></div> -->
-<img src="gamepic.jpg" alt="">
+
+<!-- <img src="gamepic.jpg" alt=""> -->
 
    <body class="body">
       <div class="container-fluid">
          <div class="col-md-12">
-            <div class="png">
+            <!-- <marquee direction="alternate"> -->
+            <div id="png">
+
+
+
+               <marquee behavior="alternate">
+
                <span class="p">p</span>
                <span class="i">i</span>
                <span class="n">n</span>
@@ -30,7 +37,20 @@
                <span class="o">o</span>
                <span class="n">n</span>
                <span class="g">g</span>
+               </marquee>
+
             </div>
+
+         <!-- </marquee> -->
+            <!-- <script >
+               $(document).ready( function () {
+                  $('.button').click(function () {
+                     $('#png').show(function () {
+
+                     });
+                  });
+               });
+            </script> -->
             <br>
             <br><br><br><br><br>
 <div class="col-md-3"><a href="#" class="h" >HOME
@@ -110,13 +130,20 @@ Enter any number, then click "Let's Play";
    <form id="button" class="form-group" action="index.html" method="post">
 
 
-         <button  type="number"  onclick="display();">Let's Play</button>
+         <button  type="number"  onclick="display();" class="button">Let's Play</button>
 <input type="text" class="form-control" id="play">
    </form>
 </div>
+
+
 <script type="text/javascript">
+
+
+
+
 //===========================================================================================================================================================================================
 // codes for switch function
+//works
 $(document).ready(function(){
    $("#button").submit(function(event){
       var number=parseInt($("#play").val());
@@ -125,24 +152,29 @@ $(document).ready(function(){
       //    array[number]
       // }
 
+
+
+//works
       switch (number) {
          case  number: (number % 3===0);
-         alert( "ping")
+         alert("ping");
 
             break;
 
+               // case number: (number%5===0);
+               //    alert( "pong");
+               //
+               //    break;
+               //
+               //
+               // case (number%5===0):
+               //    alert( "pong")
+               //
+               //    break;
 
-               case number: (number%5===0);
-                  alert( "pong");
-
-                  break;
 
 
-            //    case (number%5===0):
-            //       alert( "pong")
-            //
-            //       break;
-            //
+            //works
             event.preventDefault();
          default:
          alert("not ping nor pong")
@@ -209,17 +241,6 @@ $(document).ready(function(){
 <!-- <button onclick="myFunction()">Try it</button>
 
 <p id="demo"></p>
-
-<script type="text/javascript">
-function myFunction() {
-    var person = prompt("Please enter your name", "Harry Potter");
-
-    if (person != null) {
-        document.getElementById("demo").innerHTML =
-        "Hello " + person + "! How are you today?";
-    }
-} -->
-</script>
 <!-- <script type="text/javascript">
 $(document).ready(function(){
    $("#button").submit(function(event){
