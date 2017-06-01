@@ -54,7 +54,7 @@ marquee
    z-index: 12;
    background-image: url('https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjDnImtpKnTAhUDshQKHZcCA9YQjRwIBw&url=https%3A%2F%2Fwww.pinterest.com%2Fmorgannasims%2Fbackgrounds%2F&psig=AFQjCNHvI-UDdDpTQ1NHje95J4DC4eEbCA&ust=1492435376112431');
 }
-.col-md-3
+.col-xs-3
 {
    text-shadow: 20px 20px 50px green;
    padding: 50px;
@@ -68,7 +68,7 @@ marquee
 hover{
    display: none;
 }
-.col-md-3
+.col-xs-3
 {
    /*display: none;*/
    position: relative;
@@ -83,11 +83,11 @@ p
 {
    display: none;
 }*/
-.col-md-3 span
+.col-xs-3 span
 {
    display: none;
 }
-.col-md-3:hover span
+.col-xs-3:hover span
 {
    display: block;
    padding: 0px;
@@ -101,7 +101,7 @@ p
    margin: 0;
 }
 
-.col-md-3:hover
+.col-xs-3:hover
 {
    box-shadow: 10px 10px 30px green;
    text-shadow: 20px 20px 50px red;
@@ -123,7 +123,7 @@ ul
 }
 
 
-.col-md-6
+.col-xs-6
 {
    z-index: 14;
 }
